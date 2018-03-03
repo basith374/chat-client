@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: Cabin, sans-serif;
+}
+input, button {
+  font-family: Cabin, sans-serif;
+}
+.App-logo {
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  display: flex;
+}
+.App-header .leading {
+  flex: 1;
+  padding: 10px
+}
+.App-header button {
+  height: 100%;
+  background: #333;
+  border: none;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.App-title {
+  margin: 0;
+}
+
+.App-title img {
+  height: 24px;
+  fill: #fff;
+}
+
+.group {
+  margin-bottom: 10px;
+}
+.group.mini {
+  margin-bottom: 5px;
+}
+
+.empty-cont {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empty-box {
+  text-align: center;
+}
+
+.empty-box img {
+  width: 100px;
+}
+.empty-box .txt {
+  font-size: 20px;
+}

@@ -1,0 +1,68 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.msg-list-outer {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.msg-list-outer::-webkit-scrollbar {
+    width: 8px;
+}
+.msg-list-outer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.msg-list-outer::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.4);
+    border-radius: 4px;
+}
+.msg-list-outer::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,.6); 
+}
+
+.msg-list {
+    padding: 5px 10px;
+}
+.msg-itm {
+    padding: 5px 0;
+    display: flex;
+}
+.msg-itm-b {
+    padding: 10px;
+    background: #ccc;
+    min-width: 300px;
+}
+.msg-itm.right {
+    justify-content: flex-end;
+}
+
+.input-area {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    border-top: 1px solid #ccc;
+}
+.input-area input,
+.input-area button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 0 20px;
+    color: #555;
+}
+.input-area button {
+    width: 100px;
+    color: #111;
+    cursor: pointer;
+    background: #d7d7d7;
+    /* text-transform: uppercase; */
+}
+.input-area button:active {
+    background: #ccc;
+}
